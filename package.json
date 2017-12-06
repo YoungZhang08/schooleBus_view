@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  },
+  "name": "schoolbus_view",
+  "version": "1.0.0",
+  "description": "校车管理系统",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "YoungZhang08\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[Chttps://github.com/YoungZhang08/schoolBus"
+  },
+  "keywords": [
+    "原生+gulp打包文件"
+  ],
+  "author": "YoungZhang",
+  "license": "ISC"
+}
