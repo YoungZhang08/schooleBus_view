@@ -27,7 +27,7 @@ gulp.task('less', function() {
         .pipe(gulp.dest('src/css')); //输出文件夹
 });
 
-gulp.task('scripts',function(){
+gulp.task('css',function(){
     return gulp.src('src/css/*.css')
         .pipe(concat('main.css'))
         .pipe(gulp.dest('lastpack/css'))
@@ -45,7 +45,7 @@ gulp.task('server', function() {
     });
 
     gulp.watch(['src/js/*.js', 'src/less/*.less', 'src/html/*.html'], function() {
-        gulp.run('lint', 'less', 'scripts');
+        gulp.run('lint', 'less', 'css');
         console.log('ok');
         browserSync.reload();
     });

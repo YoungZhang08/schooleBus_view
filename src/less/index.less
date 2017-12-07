@@ -3,20 +3,101 @@ html,body{
 	height: 100%;
 	overflow: hidden;
 }
+input{
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
 #container{
 	width: 100%;
 	height: 100%;
-	.back{
-		width: 100%;
-		height: 100%;
+	overflow: hidden;
+	.login_content{
+		z-index: 1;
+		max-width: 500px;
+		height: 450px;
+		position: absolute;
+		margin: auto;
+		left:0;
+	    top:0;
+	    right:0;
+		bottom:0;
+		.login_title{
+			position: absolute;
+			width: 60%;
+			height: 40px;
+			text-align: center;
+			font-size: 28px;
+			color: #fff;
+			margin-left: 100px; 
+			p{
+				color: #ffffff;
+				text-align: center;
+			}
+		}
+		.login_form{
+			width: 100%;
+			height: 420px;
+			margin-top: 60px;
+			background-color: #ffffff;
+			.login_form_head{
+				position: absolute;
+				width: 50%;
+				height: 30px;
+				margin-top:  40px;
+				margin-left: 125px;
+				p{
+					font-size: 24px;
+					color: #0391FD;
+					text-align: center;
+					span{
+						font-size: 18px;
+						color: #6C6561;
+					}
+				}
+			}
+			.login_form_content{
+				position: absolute;
+				width: 70%;
+				height: 200px;
+				margin-top: 130px;
+				margin-left: 75px;
+				input{
+					width: 100%;
+					height: 35px;
+					border: 1px solid #6C6561;
+					margin-bottom: 25px;
+					text-indent: 5px;
+				}
+				button{
+					width: 100%;
+					height: 40px;
+					margin-top: 15px;
+					color: #ffffff;
+					font-size: 20px;
+					background-color: #0391FD;
+				}
+				.login_form_foot{
+					width: 100%;
+					height: 20px;
+					color: #6C6561;
+					font-size: 10px;
+					text-align: center;
+					margin-top: 50px;
+				}
+			}
+		}
 	}
-	.overlay{
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		background: rgba(0,0,0,.5);
+	.login_back{
+		width: 100%;
+		height: auto;
+		min-height: 400px;
+		.overlay{
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background: rgba(0,0,0,.5);
+		}
 	}
 }
 
