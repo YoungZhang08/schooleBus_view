@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	cssmin = require('gulp-minify-css'),
+    // jquery = require('jquery'),
     browserSync = require('browser-sync').create();
 
 //语法检查
