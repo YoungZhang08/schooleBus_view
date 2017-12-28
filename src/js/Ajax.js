@@ -35,6 +35,7 @@
                 this.xml = new ActiveXObject("Microsoft.XMLHTTP");
             }
             this.spliceParams();
+            //console.log(this.xml);
             if (this.dataType == 'json') {
                 this.dataTypeJson();
             } else if (this.dataType == 'jsonp') {
@@ -80,6 +81,7 @@
                 } else {
                     //失败则返回状态码
                     this.error(this.xml.status);
+                    return;
                 }
             };
 
@@ -89,6 +91,7 @@
                         //请求完成则执行回调函数作相应的处理
                         callback();
                     }
+                    return;
                 };
             }
 
